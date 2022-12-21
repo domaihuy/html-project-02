@@ -12,9 +12,25 @@ body {
 
 /* -----Common---------- */
 .content {
-  width: 1170px;
+  width: 1140px;
+  max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: block;
+  min-width: 144px;
+  padding: 16px 13px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.6rem;
+  background: #171100;
+  border-radius: 25px;
+  text-align: center;
+  color: #ffffff;
 }
 
 /* Header  */
@@ -22,26 +38,40 @@ body {
   background: #fffcf4;
   height: 100vh;
 }
-
 .navbar {
   display: flex;
   align-items: center;
   padding: 36px;
 }
-
 .navbar ul {
   display: flex;
+  margin-left: 488px;
 }
 
-.navbar .action {
+/* .navbar .action {
   margin-left: auto;
-}
-
+} */
 .navbar .icon {
   font-family: "Sen";
   font-style: normal;
   font-weight: 700;
   font-size: 2.4rem;
-  line-height: 1.24;
   color: #171100;
+}
+.navbar .home {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #171100;
+}
+.navbar ul a {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #5f5b53;
+  padding: 12px 21px;
+}
+.navbar .btn-sign {
+  padding: 16px 13px;
+  margin-left: 70px;
 }
