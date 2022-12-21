@@ -1,8 +1,47 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Sen", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -----Common---------- */
+.content {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header  */
+.header {
+  background: #fffcf4;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 36px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .action {
+  margin-left: auto;
+}
+
+.navbar .icon {
   font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.24;
+  color: #171100;
 }
