@@ -11,8 +11,9 @@ body {
 }
 
 /* -----Common---------- */
-.content {
-  width: 1110px;
+
+.main-content {
+  width: 1170px;
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
@@ -21,11 +22,10 @@ a {
   text-decoration: none;
 }
 .btn {
-  display: block;
-  min-width: 144px;
-  padding: 16px 13px;
-  font-family: "Poppins";
+  display: inline-block;
+  min-width: 118px;
   font-weight: 600;
+  padding: 16px 13px;
   font-size: 1.6rem;
   background: #171100;
   border-radius: 25px;
@@ -38,251 +38,52 @@ a {
   background: #fffcf4;
   height: 100vh;
 }
-.navbar {
+
+header.fixed {
+  position: sticky;
+  top: -28px;
+}
+
+.header .body {
   display: flex;
   align-items: center;
-  padding: 36px;
+  padding: 36px 0 8px;
 }
+
+.navbar {
+  margin-left: auto;
+}
+.navbar a {
+  position: relative;
+  padding: 8px 21px;
+  font-size: 1.6rem;
+  color: #5f5b53;
+ }
+ .navbar a:hover {
+  opacity: 0.5;
+ }
+
 .navbar ul {
   display: flex;
   margin-left: 488px;
 }
 
-.navbar .icon {
-  font-family: "Sen";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.4rem;
+.navbar li.home a {
+  text-shadow: 1px 0 0 currentColor;
   color: #171100;
 }
-.navbar .home {
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 1.6rem;
-  color: #171100;
-}
-.navbar .home::after {
+.navbar li.home a::after {
   content: "";
-  margin-left: 20px;
   display: block;
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
   width: 12px;
   height: 2px;
   background: #000339;
-  border-radius: 12px;
+  border-radius: 1px;
 }
 
-.navbar ul a {
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 1.6rem;
-  color: #5f5b53;
-  padding: 12px 21px;
-}
-.navbar .btn-sign {
-  padding: 16px 13px;
-  margin-left: 70px;
-}
-
-/* Courses */
-.courses {
-  margin-top: 65px;
-}
-
-.courses .content {
-  width: 1040px;
-}
-
-.courses .row {
-  display: flex;
-}
-.courses .info {
-  width: 470px;
-  height: 558px;
-  margin-left: 250px;
-  margin-top: 64px;
-  margin-bottom: 64px;
-}
-
-.img-block,
-.sub-title {
-  width: 50%;
-}
-
-.courses .img-block {
-  position: relative;
-}
-.courses .img-block .image {
-  display: block;
-  margin-left: auto;
-  width: 470px;
-  height: 680px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-
-.courses .info .sub-title {
-  min-width: 470px;
-  font-family: "Sen";
-  font-weight: 700;
-  font-size: 5.5rem;
-  line-height: 1.17;
-  letter-spacing: -0.02em;
-  color: #171100;
-}
-.courses .info .desc {
-  margin-top: 22px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 1.67;
-  color: #5f5b53;
-}
-
-.courses .info .btn-Courses {
-  margin-top: 38px;
-  width: 180px;
-  height: 64px;
-  background: #ffb900;
-  border-radius: 32px;
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 1.67;
-}
-.courses .content .action {
-  display: flex;
-}
-.courses .content .icon-watch {
-  margin-top: 50px;
-  margin-left: 28px;
-  width: 40px;
-  height: 40px;
-}
-.courses .content .icon {
-  display: block;
-  object-fit: cover;
-  padding-top: 15px;
-  padding-left: 14px;
-}
-.courses .content .watch {
-  width: 148px;
-  height: 30px;
-  font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 1.67;
-  color: #171100;
-  margin-left: 14px;
-  margin-top: 55px;
-}
-
-.courses .info .desc {
-  margin-top: 48px;
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 1.67;
-  color: #5f5b53;
-}
-
-.courses .info .student-k {
-  display: flex;
-}
-.courses .info .courses-k {
-  display: flex;
-  margin-left: 28px;
-}
-
-.courses .info .recent {
-  display: flex;
-}
-.courses .info .qty {
-  margin-top: 8px;
-  font-family: "Sen";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 4.4rem;
-  line-height: 1.23;
-  color: #171100;
-}
-
-.courses .info .student {
-  margin-left: 18px;
-  margin-top: 23px;
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 1.67;
-  color: #5f5b53;
-}
-.courses-item {
-  position: absolute;
-  top: 393px;
-  right: -100px;
-  width: 270px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
-}
-.row1,
-.row2,
-.row3 {
-  display: flex;
-}
-
-.row1 .row1-icon {
-  top: 28px;
-  left: 24px;
-  background: #fff9e8;
-}
-
-.row3 .row3-icon {
-  background: #fff9e8;
-}
-.row1 .Cou-design {
-  padding-top: 24px;
-  padding-left: 28px;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.86;
-  color: #5f5b53;
-}
-
-.row1 .design {
-  padding-left: 24px;
-  font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 1.67;
-  color: #171100;
-}
-
-.row2 .cou-design {
-  padding-top: 14px;
-  padding-left: 29px;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.86;
-  color: #5f5b53;
-}
-
-.row2 .development {
-  padding-left: 29px;
-  font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 1.67;
-  color: #171100;
-}
-.row3 .cou-design {
-  padding-top: 14px;
-  padding-left: 29px;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.86;
-  color: #5f5b53;
-}
-.row3 .marketing {
-  padding-left: 29px;
-  padding-bottom: 24px;
-  font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 1.67;
-  color: #171100;
+.header .action .btn-sign {
+min-width: 144px;
 }
