@@ -24,18 +24,18 @@ a {
 .btn {
   display: inline-block;
   min-width: 118px;
-  font-weight: 600;
-  padding: 16px 13px;
+  padding: 0 16px;
+  line-height: 50px;
+  font-weight: 600px;
   font-size: 1.6rem;
   background: #171100;
-  border-radius: 25px;
+  border-radius: 24.5px;
   text-align: center;
   color: #ffffff;
 }
 /* Header  */
 .header {
   background: #fffcf4;
-  /* height: 100vh; */
 }
 .fixed {
   position: sticky;
@@ -46,6 +46,9 @@ a {
   display: flex;
   align-items: center;
   padding: 36px 0 8px;
+}
+.header .action {
+  margin-left: 49px;
 }
 
 .navbar {
@@ -82,7 +85,7 @@ a {
   border-radius: 1px;
 }
 
-.action .btn-sign {
+.header .btn-sign {
   min-width: 144px;
 }
 
@@ -94,12 +97,10 @@ a {
 .hero .body {
   display: flex;
 }
+/* Hero Left */
 .hero .media-block {
   position: relative;
   width: 48%;
-}
-.content-block {
-  width: 52%;
 }
 .hero .media-block .img {
   width: 470px;
@@ -112,7 +113,7 @@ a {
   width: 270px;
   height: 244px;
   right: 0;
-  padding: 28px 24px;
+  padding: 24px;
   bottom: 48px;
   background: #ffffff;
   box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
@@ -120,7 +121,12 @@ a {
 }
 .hero-summary .item {
   display: flex;
+  align-items: center;
 }
+.hero-summary .item + .item {
+  margin-top: 22px;
+}
+
 .hero-summary .icon {
   width: 48px;
   height: 48px;
@@ -129,4 +135,154 @@ a {
   align-items: center;
   justify-content: center;
   background: #fff9e8;
+}
+.hero-summary .item:nth-of-type(2) .icon {
+  background: #fcefff;
+}
+.hero-summary .item:nth-of-type(3) .icon {
+  background: #ebeaff;
+}
+.hero-summary .info {
+  margin-left: 16px;
+}
+.hero-summary .lable {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.68;
+  color: #5f5b53;
+}
+
+.hero-summary .title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #171100;
+}
+/* Hero Right */
+.hero .content-block {
+  width: 52%;
+  padding: 64px 0 0 130px;
+}
+
+.hero .heading {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.5rem;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+.hero .desc {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+.hero .cta-group {
+  display: flex;
+  align-items: center;
+  margin: 38px 0 48px;
+}
+.hero-cta {
+  min-width: 180px;
+  line-height: 62px;
+  border-radius: 32px;
+  background-color: #ffb900;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffffff;
+}
+.hero .watch-video {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  margin-left: 28px;
+  cursor: pointer;
+}
+.hero .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-video span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+  margin-left: 14px;
+}
+
+.hero .stats strong:first-child {
+  padding-left: 0;
+}
+.hero .stats strong {
+  padding: 0 8px 0 28px;
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 1.23;
+  color: #171100;
+}
+
+/* Popular */
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+.popular .heading {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.26;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+
+.popular .desc {
+  margin-top: 16px;
+  width: 458px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-top .controls {
+  display: flex;
+  gap: 18px;
+}
+
+.popular-top .controls-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #ffb900;
+  border: 1px solid #ffb900;
+  background: transparent;
+}
+.popular-top .controls-btn:hover {
+  color: #ffffff;
+  background: #ffb900;
+  cursor: pointer;
 }
