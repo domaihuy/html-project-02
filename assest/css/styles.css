@@ -91,7 +91,7 @@ a {
 
 /* Hero */
 .hero {
-  padding-top: 56px;
+  padding: 56px 0 65px;
   background: #fffcf4;
 }
 .hero .body {
@@ -107,6 +107,7 @@ a {
   height: 685px;
   object-fit: cover;
   border-radius: 20px;
+  display: block;
 }
 .media-block .hero-summary {
   position: absolute;
@@ -145,7 +146,7 @@ a {
 .hero-summary .info {
   margin-left: 16px;
 }
-.hero-summary .lable {
+.hero-summary .label {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.68;
@@ -285,4 +286,63 @@ a {
   color: #ffffff;
   background: #ffb900;
   cursor: pointer;
+}
+.course-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+}
+.course-item {
+  width: 370px;
+}
+.course-item .thumb {
+  width: 370px;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+.course-item .head {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 16px;
+  justify-content: space-between;
+}
+.course-item .value {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #fea31b;
+}
+.course-item .info {
+  width: 326px;
+  margin-left: 22px;
+}
+.course-item .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+.course-item .desc {
+  width: 326px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+.course-item .foot {
+  margin-top: 12px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+.course-item .price {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+.course-item .btn {
+  margin-left: 141px;
 }
