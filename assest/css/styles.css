@@ -18,6 +18,16 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp .line-2 {
+  --line-clamp: 2;
+}
+
 a {
   text-decoration: none;
 }
@@ -238,7 +248,7 @@ a {
 
 /* Popular */
 .popular {
-  padding: 65px 0;
+  /* padding: 65px 0; */
   margin-top: 135px;
 }
 .popular .heading {
@@ -301,12 +311,15 @@ a {
   object-fit: cover;
   border-radius: 12px 12px 0px 0px;
 }
-.course-item .head {
+.course-item .head,
+.course-item .rating,
+.course-item .foot {
   display: flex;
-  justify-content: center;
-  justify-items: center;
-  padding-top: 16px;
   justify-content: space-between;
+  align-items: center;
+}
+.course-item .head {
+  padding-top: 16px;
 }
 .course-item .value {
   font-weight: 400;
@@ -318,8 +331,8 @@ a {
   width: 326px;
   margin-left: 22px;
 }
-.course-item .title {
-  font-weight: 600;
+.course-item .title a {
+  padding-right: 6px;
   font-size: 1.8rem;
   line-height: 1.67;
   color: #171100;
@@ -333,9 +346,6 @@ a {
 }
 .course-item .foot {
   margin-top: 12px;
-  display: flex;
-  justify-items: center;
-  justify-content: center;
 }
 .course-item .price {
   font-weight: 600;
@@ -343,6 +353,12 @@ a {
   line-height: 1.67;
   color: #171100;
 }
-.course-item .btn {
-  margin-left: 141px;
+
+.course-item .btn-book {
+  border: none;
+}
+.course-item .btn-book:hover {
+  color: #ffffff;
+  background: #ffb900;
+  cursor: pointer;
 }
